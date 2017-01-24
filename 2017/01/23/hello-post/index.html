@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Testing,Another Tag," />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940/*** Meta Helper* @description Generate meta tags for HTML header* @example*     &amp;lt;%- meta(post) %&amp;gt;*/function trim (str) &amp;#1">
+<meta name="description" content="1console.log(&quot;Hello World!&quot;);">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello_post">
+<meta property="og:title" content="hello-post">
 <meta property="og:url" content="https://xhusky.github.io/2017/01/23/hello-post/index.html">
 <meta property="og:site_name" content="xhusky">
-<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940/*** Meta Helper* @description Generate meta tags for HTML header* @example*     &amp;lt;%- meta(post) %&amp;gt;*/function trim (str) &amp;#1">
-<meta property="og:updated_time" content="2017-01-23T07:18:09.123Z">
+<meta property="og:description" content="1console.log(&quot;Hello World!&quot;);">
+<meta property="og:updated_time" content="2017-01-24T06:29:34.900Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hello_post">
-<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940/*** Meta Helper* @description Generate meta tags for HTML header* @example*     &amp;lt;%- meta(post) %&amp;gt;*/function trim (str) &amp;#1">
+<meta name="twitter:title" content="hello-post">
+<meta name="twitter:description" content="1console.log(&quot;Hello World!&quot;);">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <title> hello_post | xhusky </title>
+  <title> hello-post | xhusky </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -202,12 +202,42 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
           </a>
         </li>
       
@@ -287,7 +317,7 @@
             
             
               
-                hello_post
+                hello-post
               
             
           </h1>
@@ -312,6 +342,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Testing/" itemprop="url" rel="index">
+                    <span itemprop="name">Testing</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -338,7 +390,7 @@
       
 
       
-        <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">/**</div><div class="line">* Meta Helper</div><div class="line">* @description Generate meta tags for HTML header</div><div class="line">* @example</div><div class="line">*     &lt;%- meta(post) %&gt;</div><div class="line">*/</div><div class="line">function trim (str) &#123;</div><div class="line">    return str.trim().replace(/^"(.*)"$/, '$1').replace(/^'(.*)'$/, '$1');</div><div class="line">&#125;</div><div class="line"></div><div class="line">function split (str, sep) &#123;</div><div class="line">    var result = [];</div><div class="line">    var matched = null;</div><div class="line">    while (matched = sep.exec(str)) &#123;</div><div class="line">        result.push(matched[0]);</div><div class="line">    &#125;</div><div class="line">    return result;</div><div class="line">&#125;</div><div class="line"></div><div class="line">hexo.extend.helper.register('meta', function (post) &#123;</div><div class="line">    var metas = post.meta || [];</div><div class="line">    var output = '';</div><div class="line">    var metaDOMArray = metas.map(function (meta) &#123;</div><div class="line">        var entities = split(meta, /(?:[^\\;]+|\\.)+/g);</div><div class="line">        var entityArray = entities.map(function (entity) &#123;</div><div class="line">            var keyValue = split(entity, /(?:[^\\=]+|\\.)+/g);</div><div class="line">            if (keyValue.length &lt; 2) &#123;</div><div class="line">                return null;</div><div class="line">            &#125;</div><div class="line">            var key = trim(keyValue[0]);</div><div class="line">            var value = trim(keyValue[1]);</div><div class="line">            return key + '="' + value + '"';</div><div class="line">        &#125;).filter(function (entity) &#123;</div><div class="line">            return entity;</div><div class="line">        &#125;);</div><div class="line">        return '&lt;meta ' + entityArray.join(' ') + ' /&gt;';</div><div class="line">    &#125;);</div><div class="line">    return metaDOMArray.join('\n');</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">"Hello World!"</span>);</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -359,6 +411,14 @@
 
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Testing/" rel="tag"># Testing</a>
+          
+            <a href="/tags/Another-Tag/" rel="tag"># Another Tag</a>
+          
+        </div>
       
 
       
@@ -427,7 +487,7 @@
                src="/images/avatar.jpg"
                alt="xhusky" />
           <p class="site-author-name" itemprop="name">xhusky</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+          <p class="site-description motion-element" itemprop="description">我拉着你的手,就像牵着狗.</p>
         </div>
         <nav class="site-state motion-element">
         
@@ -441,7 +501,21 @@
           
 
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -449,6 +523,26 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/xhusky" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/201262012" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
           
         </div>
 
