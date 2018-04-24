@@ -12,19 +12,19 @@ customize:
         enabled: true
         width: 40
         height: 40
-        url: images/mabu.jpg
+        url: images/logo.svg
     profile:
         enabled: true # Whether to show profile bar
-        avatar: css/images/mabu.jpg
+        avatar: css/images/logo.svg
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: MABU
+        author: OXFFFF
         author_title: Web Developer
         location: Beijing, China
         follow: https://github.com/xhusky/
     highlight: solarized-light #monokai
     sidebar: right # sidebar position, options: left, right or leave it empty
     thumbnail: true # enable posts thumbnail, options: true, false
-    favicon: # path to favicon
+    favicon: css/images/favicon-32x32.png # path to favicon
     social_links:
         github: http://github.com/xhusky
         twitter: /
