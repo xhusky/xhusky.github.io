@@ -4,15 +4,21 @@ branches:
   only:
   - hexo
 cache:
+  apt: true
+  yarn: true
   directories:
     - node_modules
 before_install:
   - git config --global user.name "xhusky"
   - git config --global user.email "wsg115@126.com"
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+  - npm install -g hexo-cli
 install:
-  - npm install
+  - yarn
 script:
-  - hexo g
+  - hexo clean
+  - hexo generate
 after_success:
   - cd ./public
   - git init
@@ -22,3 +28,4 @@ after_success:
 env:
  global:
     - GH_REF: github.com/xhusky/xhusky.github.io.git
+
