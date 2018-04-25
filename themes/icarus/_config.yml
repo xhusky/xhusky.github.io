@@ -21,7 +21,7 @@ customize:
         author_title: Web Developer
         location: Beijing, China
         follow: https://github.com/xhusky/
-    highlight: solarized-light #monokai
+    highlight: solarized-dark #monokai
     sidebar: right # sidebar position, options: left, right or leave it empty
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: css/images/favicon-32x32.png # path to favicon
